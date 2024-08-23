@@ -11,6 +11,7 @@
 		0A0B3A882C6DE900005FC2DD /* SettingsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B3A872C6DE900005FC2DD /* SettingsOptionsViewModel.swift */; };
 		0A6E96012C71BA2F00F203D1 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E96002C71BA2F00F203D1 /* ProfileViewModel.swift */; };
 		0A6E96032C724E6400F203D1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E96022C724E6400F203D1 /* User.swift */; };
+		0A6E96062C77255A00F203D1 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E96052C77255A00F203D1 /* CircularProfileImageView.swift */; };
 		0AC1DAE52BF330A400EADEBD /* MessagesCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC1DAE42BF330A400EADEBD /* MessagesCloneApp.swift */; };
 		0AC1DAE72BF330A400EADEBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC1DAE62BF330A400EADEBD /* ContentView.swift */; };
 		0AC1DAE92BF330A600EADEBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC1DAE82BF330A600EADEBD /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		0A0B3A872C6DE900005FC2DD /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
 		0A6E96002C71BA2F00F203D1 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		0A6E96022C724E6400F203D1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0A6E96052C77255A00F203D1 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		0AC1DAE12BF330A400EADEBD /* MessagesClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessagesClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC1DAE42BF330A400EADEBD /* MessagesCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesCloneApp.swift; sourceTree = "<group>"; };
 		0AC1DAE62BF330A400EADEBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 				0A6E96002C71BA2F00F203D1 /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0A6E96042C77252B00F203D1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0A6E96052C77255A00F203D1 /* CircularProfileImageView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		0AC1DAD82BF330A400EADEBD = {
@@ -141,6 +151,7 @@
 		0AFBE3CB2BF34805003C3E15 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				0A6E96042C77252B00F203D1 /* Components */,
 				0AFBE3D72BF3617B003C3E15 /* ActiveNow */,
 				0AFBE3CD2BF34858003C3E15 /* Authentication */,
 				0AFBE3D42BF35D54003C3E15 /* Inbox */,
@@ -284,6 +295,7 @@
 				0A0B3A862C6DE0C3005FC2DD /* ProfileView.swift in Sources */,
 				0AFBE3DE2BF36C2E003C3E15 /* NewMessageView.swift in Sources */,
 				0AFBE3D12BF34889003C3E15 /* LoginView.swift in Sources */,
+				0A6E96062C77255A00F203D1 /* CircularProfileImageView.swift in Sources */,
 				0AC1DAE72BF330A400EADEBD /* ContentView.swift in Sources */,
 				0AFBE3D62BF35D70003C3E15 /* InboxView.swift in Sources */,
 				0A6E96012C71BA2F00F203D1 /* ProfileViewModel.swift in Sources */,

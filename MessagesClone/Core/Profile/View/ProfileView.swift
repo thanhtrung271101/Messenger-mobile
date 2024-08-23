@@ -16,12 +16,7 @@ struct ProfileView: View {
                             .frame(width: 100, height: 100)
                             .clipShape(Circle())
                     } else {
-                        Image(systemName: "person.circle.fill")
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 80, height: 80)
-                            .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                            .foregroundStyle(Color(.black))
+                        CircularProfileImageView(user: user, size: .xLarge)
 
                     }
                 }
