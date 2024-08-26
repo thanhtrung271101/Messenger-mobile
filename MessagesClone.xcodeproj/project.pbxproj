@@ -27,6 +27,7 @@
 		0ACAD45C2C7C66D70059BF6E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0ACAD45B2C7C66D70059BF6E /* FirebaseFirestore */; };
 		0ACAD45E2C7C66D70059BF6E /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0ACAD45D2C7C66D70059BF6E /* FirebaseStorage */; };
 		0ACAD4622C7C73700059BF6E /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACAD4612C7C73700059BF6E /* ContentViewModel.swift */; };
+		0ACAD4642C7C8DBB0059BF6E /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACAD4632C7C8DBB0059BF6E /* UserService.swift */; };
 		0AFBE3D12BF34889003C3E15 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFBE3D02BF34889003C3E15 /* LoginView.swift */; };
 		0AFBE3D32BF359E1003C3E15 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFBE3D22BF359E1003C3E15 /* RegistrationView.swift */; };
 		0AFBE3D62BF35D70003C3E15 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFBE3D52BF35D70003C3E15 /* InboxView.swift */; };
@@ -55,6 +56,7 @@
 		0AC1DAEB2BF330A600EADEBD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0ACAD4562C7C664C0059BF6E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0ACAD4612C7C73700059BF6E /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		0ACAD4632C7C8DBB0059BF6E /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		0AFBE3D02BF34889003C3E15 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		0AFBE3D22BF359E1003C3E15 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		0AFBE3D52BF35D70003C3E15 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 		0AFBE3C92BF34802003C3E15 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				0ACAD4632C7C8DBB0059BF6E /* UserService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				0AC1DAE72BF330A400EADEBD /* ContentView.swift in Sources */,
 				0A6E96112C79A59300F203D1 /* ChatView.swift in Sources */,
 				0A6E962B2C7A07EC00F203D1 /* LoginViewModel.swift in Sources */,
+				0ACAD4642C7C8DBB0059BF6E /* UserService.swift in Sources */,
 				0AFBE3D62BF35D70003C3E15 /* InboxView.swift in Sources */,
 				0A6E96012C71BA2F00F203D1 /* ProfileViewModel.swift in Sources */,
 				0A6E96032C724E6400F203D1 /* User.swift in Sources */,
