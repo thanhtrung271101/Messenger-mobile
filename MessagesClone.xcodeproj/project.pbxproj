@@ -15,16 +15,24 @@
 		0A6E96112C79A59300F203D1 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E96102C79A59300F203D1 /* ChatView.swift */; };
 		0A6E96132C79B35F00F203D1 /* ChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E96122C79B35F00F203D1 /* ChatViewCell.swift */; };
 		0A6E96152C79F9BE00F203D1 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E96142C79F9BE00F203D1 /* ChatBubble.swift */; };
+		0A6E962B2C7A07EC00F203D1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E962A2C7A07EC00F203D1 /* LoginViewModel.swift */; };
+		0A6E962D2C7A084400F203D1 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E962C2C7A084400F203D1 /* RegistrationViewModel.swift */; };
+		0A6E962F2C7A087800F203D1 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E962E2C7A087800F203D1 /* AuthService.swift */; };
 		0AC1DAE52BF330A400EADEBD /* MessagesCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC1DAE42BF330A400EADEBD /* MessagesCloneApp.swift */; };
 		0AC1DAE72BF330A400EADEBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC1DAE62BF330A400EADEBD /* ContentView.swift */; };
 		0AC1DAE92BF330A600EADEBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC1DAE82BF330A600EADEBD /* Assets.xcassets */; };
 		0AC1DAEC2BF330A600EADEBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC1DAEB2BF330A600EADEBD /* Preview Assets.xcassets */; };
+		0ACAD4572C7C664C0059BF6E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0ACAD4562C7C664C0059BF6E /* GoogleService-Info.plist */; };
+		0ACAD45A2C7C66D70059BF6E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0ACAD4592C7C66D70059BF6E /* FirebaseAuth */; };
+		0ACAD45C2C7C66D70059BF6E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0ACAD45B2C7C66D70059BF6E /* FirebaseFirestore */; };
+		0ACAD45E2C7C66D70059BF6E /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0ACAD45D2C7C66D70059BF6E /* FirebaseStorage */; };
 		0AFBE3D12BF34889003C3E15 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFBE3D02BF34889003C3E15 /* LoginView.swift */; };
 		0AFBE3D32BF359E1003C3E15 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFBE3D22BF359E1003C3E15 /* RegistrationView.swift */; };
 		0AFBE3D62BF35D70003C3E15 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFBE3D52BF35D70003C3E15 /* InboxView.swift */; };
 		0AFBE3D92BF3618D003C3E15 /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFBE3D82BF3618D003C3E15 /* ActiveNowView.swift */; };
 		0AFBE3DB2BF36454003C3E15 /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFBE3DA2BF36454003C3E15 /* InboxRowView.swift */; };
 		0AFBE3DE2BF36C2E003C3E15 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFBE3DD2BF36C2E003C3E15 /* NewMessageView.swift */; };
+		D35C58D9B67A3B8582136A27 /* Pods_MessagesClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55ACFB6B0D96666F88F22422 /* Pods_MessagesClone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,17 +44,24 @@
 		0A6E96102C79A59300F203D1 /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		0A6E96122C79B35F00F203D1 /* ChatViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewCell.swift; sourceTree = "<group>"; };
 		0A6E96142C79F9BE00F203D1 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
+		0A6E962A2C7A07EC00F203D1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		0A6E962C2C7A084400F203D1 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		0A6E962E2C7A087800F203D1 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		0AC1DAE12BF330A400EADEBD /* MessagesClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessagesClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC1DAE42BF330A400EADEBD /* MessagesCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesCloneApp.swift; sourceTree = "<group>"; };
 		0AC1DAE62BF330A400EADEBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0AC1DAE82BF330A600EADEBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AC1DAEB2BF330A600EADEBD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0ACAD4562C7C664C0059BF6E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0AFBE3D02BF34889003C3E15 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		0AFBE3D22BF359E1003C3E15 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		0AFBE3D52BF35D70003C3E15 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
 		0AFBE3D82BF3618D003C3E15 /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
 		0AFBE3DA2BF36454003C3E15 /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
 		0AFBE3DD2BF36C2E003C3E15 /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
+		55ACFB6B0D96666F88F22422 /* Pods_MessagesClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessagesClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B1273E11723059EB5A6E368 /* Pods-MessagesClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessagesClone.debug.xcconfig"; path = "Target Support Files/Pods-MessagesClone/Pods-MessagesClone.debug.xcconfig"; sourceTree = "<group>"; };
+		C6EDA1009F35EC46939660A7 /* Pods-MessagesClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessagesClone.release.xcconfig"; path = "Target Support Files/Pods-MessagesClone/Pods-MessagesClone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +69,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D35C58D9B67A3B8582136A27 /* Pods_MessagesClone.framework in Frameworks */,
+				0ACAD45E2C7C66D70059BF6E /* FirebaseStorage in Frameworks */,
+				0ACAD45A2C7C66D70059BF6E /* FirebaseAuth in Frameworks */,
+				0ACAD45C2C7C66D70059BF6E /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,11 +123,30 @@
 			path = Chat;
 			sourceTree = "<group>";
 		};
+		0A6E96282C7A07BF00F203D1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0A6E962A2C7A07EC00F203D1 /* LoginViewModel.swift */,
+				0A6E962C2C7A084400F203D1 /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0A6E96292C7A07C300F203D1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0A6E962E2C7A087800F203D1 /* AuthService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		0AC1DAD82BF330A400EADEBD = {
 			isa = PBXGroup;
 			children = (
 				0AC1DAE32BF330A400EADEBD /* MessagesClone */,
 				0AC1DAE22BF330A400EADEBD /* Products */,
+				0CE2A383DE564084718A329C /* Pods */,
+				C4E323893BE4D604CEFEE9C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +167,7 @@
 				0AFBE3C92BF34802003C3E15 /* Service */,
 				0AFBE3C72BF347FD003C3E15 /* Extensions */,
 				0AC1DAE82BF330A600EADEBD /* Assets.xcassets */,
+				0ACAD4562C7C664C0059BF6E /* GoogleService-Info.plist */,
 				0AC1DAEA2BF330A600EADEBD /* Preview Content */,
 			);
 			path = MessagesClone;
@@ -190,6 +229,8 @@
 		0AFBE3CD2BF34858003C3E15 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				0A6E96292C7A07C300F203D1 /* Service */,
+				0A6E96282C7A07BF00F203D1 /* ViewModel */,
 				0AFBE3CF2BF3487B003C3E15 /* View */,
 			);
 			path = Authentication;
@@ -237,6 +278,23 @@
 			path = NewMessage;
 			sourceTree = "<group>";
 		};
+		0CE2A383DE564084718A329C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B1273E11723059EB5A6E368 /* Pods-MessagesClone.debug.xcconfig */,
+				C6EDA1009F35EC46939660A7 /* Pods-MessagesClone.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C4E323893BE4D604CEFEE9C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55ACFB6B0D96666F88F22422 /* Pods_MessagesClone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,15 +302,22 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AC1DAEF2BF330A600EADEBD /* Build configuration list for PBXNativeTarget "MessagesClone" */;
 			buildPhases = (
+				0AAA42CEEAAD5A75DD7EB524 /* [CP] Check Pods Manifest.lock */,
 				0AC1DADD2BF330A400EADEBD /* Sources */,
 				0AC1DADE2BF330A400EADEBD /* Frameworks */,
 				0AC1DADF2BF330A400EADEBD /* Resources */,
+				BEAB7BCFD580B77A060BDDE2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MessagesClone;
+			packageProductDependencies = (
+				0ACAD4592C7C66D70059BF6E /* FirebaseAuth */,
+				0ACAD45B2C7C66D70059BF6E /* FirebaseFirestore */,
+				0ACAD45D2C7C66D70059BF6E /* FirebaseStorage */,
+			);
 			productName = MessagesClone;
 			productReference = 0AC1DAE12BF330A400EADEBD /* MessagesClone.app */;
 			productType = "com.apple.product-type.application";
@@ -281,6 +346,9 @@
 				Base,
 			);
 			mainGroup = 0AC1DAD82BF330A400EADEBD;
+			packageReferences = (
+				0ACAD4582C7C66D70059BF6E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 0AC1DAE22BF330A400EADEBD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -297,10 +365,53 @@
 			files = (
 				0AC1DAEC2BF330A600EADEBD /* Preview Assets.xcassets in Resources */,
 				0AC1DAE92BF330A600EADEBD /* Assets.xcassets in Resources */,
+				0ACAD4572C7C664C0059BF6E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AAA42CEEAAD5A75DD7EB524 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MessagesClone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEAB7BCFD580B77A060BDDE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MessagesClone/Pods-MessagesClone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MessagesClone/Pods-MessagesClone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MessagesClone/Pods-MessagesClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0AC1DADD2BF330A400EADEBD /* Sources */ = {
@@ -308,15 +419,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A0B3A882C6DE900005FC2DD /* SettingsOptionsViewModel.swift in Sources */,
+				0A6E962D2C7A084400F203D1 /* RegistrationViewModel.swift in Sources */,
 				0AFBE3DB2BF36454003C3E15 /* InboxRowView.swift in Sources */,
 				0A0B3A862C6DE0C3005FC2DD /* ProfileView.swift in Sources */,
 				0AFBE3DE2BF36C2E003C3E15 /* NewMessageView.swift in Sources */,
 				0AFBE3D12BF34889003C3E15 /* LoginView.swift in Sources */,
+				0A6E962F2C7A087800F203D1 /* AuthService.swift in Sources */,
 				0A6E96062C77255A00F203D1 /* CircularProfileImageView.swift in Sources */,
 				0A6E96132C79B35F00F203D1 /* ChatViewCell.swift in Sources */,
 				0A6E96152C79F9BE00F203D1 /* ChatBubble.swift in Sources */,
 				0AC1DAE72BF330A400EADEBD /* ContentView.swift in Sources */,
 				0A6E96112C79A59300F203D1 /* ChatView.swift in Sources */,
+				0A6E962B2C7A07EC00F203D1 /* LoginViewModel.swift in Sources */,
 				0AFBE3D62BF35D70003C3E15 /* InboxView.swift in Sources */,
 				0A6E96012C71BA2F00F203D1 /* ProfileViewModel.swift in Sources */,
 				0A6E96032C724E6400F203D1 /* User.swift in Sources */,
@@ -450,6 +564,7 @@
 		};
 		0AC1DAF02BF330A600EADEBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B1273E11723059EB5A6E368 /* Pods-MessagesClone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -458,6 +573,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MessagesClone/Preview Content\"";
 				DEVELOPMENT_TEAM = 83SA7HTXCZ;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -480,6 +596,7 @@
 		};
 		0AC1DAF12BF330A600EADEBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6EDA1009F35EC46939660A7 /* Pods-MessagesClone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -488,6 +605,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MessagesClone/Preview Content\"";
 				DEVELOPMENT_TEAM = 83SA7HTXCZ;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -530,6 +648,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0ACAD4582C7C66D70059BF6E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0ACAD4592C7C66D70059BF6E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0ACAD4582C7C66D70059BF6E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		0ACAD45B2C7C66D70059BF6E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0ACAD4582C7C66D70059BF6E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		0ACAD45D2C7C66D70059BF6E /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0ACAD4582C7C66D70059BF6E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0AC1DAD92BF330A400EADEBD /* Project object */;
 }
