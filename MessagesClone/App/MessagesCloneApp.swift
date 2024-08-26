@@ -19,11 +19,12 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 @main
 struct MessagesCloneApp: App {
+    
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-            InboxView()
+            LoginView()
         }
     }
 }
