@@ -15,6 +15,7 @@ class UserService {
     
     static let shared = UserService()
     
+    @MainActor
     func fetchCurrentUser() async throws {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         let snapshot = try await Firestore.firestore().collection("users").document(uid).getDocument()
