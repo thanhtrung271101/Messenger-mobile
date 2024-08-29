@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct ChatView: View {
-    @State private var messageText = ""
+    @StateObject var viewModel: ChatViewModel
     let user: User
+    
+    init(user: User) {
+        self.user = user
+        self._viewModel = StateObject(wrappedValue: ChatViewModel(user: user))
+    }
     var body: some View {
         ScrollView {
             // header
@@ -28,8 +33,8 @@ struct ChatView: View {
             
             // message
             
-            ForEach(0...15, id: \.self) { user in
-                ChatViewCell(isFromCurrentUser: Bool.random())
+            ForEach(viewModel.messages) { message in
+                ChatViewCell(message: message)
             }
             
             
@@ -37,17 +42,20 @@ struct ChatView: View {
         Spacer()
         // message input view
         ZStack(alignment: .trailing) {
-            TextField("Message...", text: $messageText, axis: .vertical)
+            TextField("Message...", text: $viewModel.messageText, axis: .vertical)
                 .padding(12)
                 .padding(.trailing, 48)
                 .background(Color(.systemGroupedBackground))
                 .clipShape(RoundedRectangle(cornerRadius: 30))
                 .font(.subheadline)
-            Button(action: {print("Send message...")}, label: {
+            Button {
+                viewModel.sendMessage()
+                viewModel.messageText = ""
+            } label: {
                 Text("Send")
                     .font(.subheadline)
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-            })
+            }
             .padding(.horizontal)
         }
         .padding()
