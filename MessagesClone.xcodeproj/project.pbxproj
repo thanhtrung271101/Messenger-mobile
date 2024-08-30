@@ -16,6 +16,7 @@
 		0A3D5E882C807985008DA3B9 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D5E872C807985008DA3B9 /* ChatService.swift */; };
 		0A3D5E8B2C807B15008DA3B9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D5E8A2C807B15008DA3B9 /* Constants.swift */; };
 		0A3D5E8E2C80E832008DA3B9 /* InboxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D5E8D2C80E832008DA3B9 /* InboxService.swift */; };
+		0A3D5E902C8220CE008DA3B9 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D5E8F2C8220CE008DA3B9 /* Date.swift */; };
 		0A6E96012C71BA2F00F203D1 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E96002C71BA2F00F203D1 /* ProfileViewModel.swift */; };
 		0A6E96032C724E6400F203D1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E96022C724E6400F203D1 /* User.swift */; };
 		0A6E96062C77255A00F203D1 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6E96052C77255A00F203D1 /* CircularProfileImageView.swift */; };
@@ -55,6 +56,7 @@
 		0A3D5E872C807985008DA3B9 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 		0A3D5E8A2C807B15008DA3B9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0A3D5E8D2C80E832008DA3B9 /* InboxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxService.swift; sourceTree = "<group>"; };
+		0A3D5E8F2C8220CE008DA3B9 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		0A6E96002C71BA2F00F203D1 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		0A6E96022C724E6400F203D1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0A6E96052C77255A00F203D1 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
@@ -241,10 +243,10 @@
 			children = (
 				0AFBE3CC2BF34807003C3E15 /* App */,
 				0AFBE3CB2BF34805003C3E15 /* Core */,
+				0AFBE3C72BF347FD003C3E15 /* Extensions */,
 				0AFBE3CA2BF34804003C3E15 /* Model */,
 				0AFBE3C92BF34802003C3E15 /* Service */,
 				0A3D5E892C807AFF008DA3B9 /* Utils */,
-				0AFBE3C72BF347FD003C3E15 /* Extensions */,
 				0AC1DAE82BF330A600EADEBD /* Assets.xcassets */,
 				0ACAD4562C7C664C0059BF6E /* GoogleService-Info.plist */,
 				0AC1DAEA2BF330A600EADEBD /* Preview Content */,
@@ -296,6 +298,7 @@
 		0AFBE3C72BF347FD003C3E15 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0A3D5E8F2C8220CE008DA3B9 /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -537,6 +540,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A3D5E852C803B5F008DA3B9 /* ChatViewModel.swift in Sources */,
+				0A3D5E902C8220CE008DA3B9 /* Date.swift in Sources */,
 				0A0B3A882C6DE900005FC2DD /* SettingsOptionsViewModel.swift in Sources */,
 				0ACAD4682C7C8FD50059BF6E /* InboxViewModel.swift in Sources */,
 				0A6E962D2C7A084400F203D1 /* RegistrationViewModel.swift in Sources */,
