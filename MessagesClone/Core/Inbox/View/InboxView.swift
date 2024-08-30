@@ -25,8 +25,8 @@ struct InboxView: View {
                     .padding(.bottom)
                 
                 List {
-                    ForEach(0 ... 10,id: \.self) { message in
-                        InboxRowView()
+                    ForEach(viewModel.recentMessage) { message in
+                        InboxRowView(message: message)
                     }
                 }
                 .listStyle(.plain)
