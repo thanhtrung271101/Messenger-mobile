@@ -10,7 +10,6 @@ import Firebase
 import FirebaseAuth
 
 struct ChatService {
-    static let messagesCollection = Firestore.firestore().collection("messages")
     
     let chatPartner: User
     
@@ -21,6 +20,11 @@ struct ChatService {
         
         let currentUserRef = FirestoreConstants.MessagesCollection.document(currentUid).collection(chatPartnetId).document()
         let chatPartnerRef = FirestoreConstants.MessagesCollection.document(chatPartnetId).collection(currentUid)
+        
+        let recentCurrentUserRef = 
+        FirestoreConstants.MessagesCollection.document(currentUid).collection("recent-message").document(chatPartnetId)
+        let recentPartnerRef = 
+        FirestoreConstants.MessagesCollection.document(chatPartnetId).collection("recent-message").document(currentUid)
         
         let messageId = currentUserRef.documentID
         
@@ -36,6 +40,9 @@ struct ChatService {
         
         currentUserRef.setData(messageData)
         chatPartnerRef.document(messageId).setData(messageData)
+        
+        recentCurrentUserRef.setData(messageData)
+        recentPartnerRef.setData(messageData)
     }
     
     func observeMessages( completion: @escaping([Message]) -> Void) {
