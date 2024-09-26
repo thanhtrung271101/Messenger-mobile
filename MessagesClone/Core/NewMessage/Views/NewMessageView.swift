@@ -14,7 +14,7 @@ struct NewMessageView: View {
     @Environment(\.dismiss) var dismiss
     var body: some View {
         NavigationStack {
-            ScrollView() {
+            ScrollView {
                 TextField("To: ", text: $searchText)
                     .frame(height: 44)
                     .padding(.leading)
@@ -45,8 +45,8 @@ struct NewMessageView: View {
             }
             .navigationTitle("New message")
             .navigationBarTitleDisplayMode(.inline)
-            .toolbar() {
-                ToolbarItem(placement: .navigationBarLeading){
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
                     Button("Cancel") {
                         dismiss()
                     }

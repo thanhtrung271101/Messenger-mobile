@@ -21,7 +21,7 @@ struct LoginView: View {
                     .padding()
                     .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: 10, y: 20)
                     .padding(.vertical)
-                
+
                 // input field
                 VStack {
                     TextField("Enter your email", text: $viewModel.email)
@@ -30,7 +30,7 @@ struct LoginView: View {
                         .background(Color(.systemGray6))
                         .cornerRadius(10)
                         .padding(.horizontal, 24)
-                    
+
                     SecureField("Enter your password", text: $viewModel.password)
                         .font(.subheadline)
                         .padding(12)
@@ -38,7 +38,7 @@ struct LoginView: View {
                         .cornerRadius(10)
                         .padding(.horizontal, 24)
                 }
-                
+
                 // forgot btn
                 Button {
                     print("Forgot password?")
@@ -50,7 +50,7 @@ struct LoginView: View {
                         .padding(.top)
                 }
                 .frame(maxWidth: .infinity, alignment: .trailing)
-                
+
                 // login btn
                 Button {
                     Task { try await viewModel.login()}
@@ -63,7 +63,7 @@ struct LoginView: View {
                         .cornerRadius(10)
                 }
                 .padding(.vertical)
-                
+
                 HStack {
                     Rectangle()
                         .frame(width: (UIScreen.main.bounds.width / 2) - 40, height: 0.5)
@@ -74,8 +74,7 @@ struct LoginView: View {
                         .frame(width: (UIScreen.main.bounds.width / 2) - 40, height: 0.5)
                 }
                 .foregroundStyle(.gray)
-                
-                
+
                 // facebook login btn
                 Button {
                     print("Login with facebook")
@@ -107,7 +106,7 @@ struct LoginView: View {
                 }
                 .font(.footnote)
                 .padding(.vertical)
-                
+
             }
         }
     }

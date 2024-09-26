@@ -12,15 +12,15 @@ import FirebaseFirestore
 
 class AuthService {
     @Published var userSession: FirebaseAuth.User?
-    
+
     static let shared = AuthService()
-    
+
     init() {
         self.userSession = Auth.auth().currentUser
         loadCurrentUserData()
         print("DEBUG: User session id is \(userSession?.uid)")
     }
-    
+
     @MainActor
     func login(withEmail email: String, password: String) async throws {
         do {
@@ -42,7 +42,7 @@ class AuthService {
             print("DEBUG: Failed to create user with error: \(error.localizedDescription)")
         }
     }
-    
+
     func signOut() {
         do {
             try Auth.auth().signOut() // signs out on the backend
@@ -52,13 +52,13 @@ class AuthService {
             print("DEBUG: Failed to sign out with error \(error.localizedDescription)")
         }
     }
-    
+
     func uploadUserData(email: String, fullName: String, id: String) async throws {
         let user = User(fullName: fullName, email: email, profileImageUrl: nil)
         guard let encodedUser = try? Firestore.Encoder().encode(user) else { return }
         try await Firestore.firestore().collection("users").document(id).setData(encodedUser)
     }
-    
+
     private func loadCurrentUserData() {
         Task { try await UserService.shared.fetchCurrentUser()}
     }
