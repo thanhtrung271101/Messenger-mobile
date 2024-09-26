@@ -10,24 +10,24 @@ import Firebase
 import FirebaseAuth
 
 struct ChatService {
-    
+
     let chatPartner: User
-    
+
     func sendMessage(_ messageText: String) {
         guard let currentUid = Auth.auth().currentUser?.uid else { return }
-        
+
         let chatPartnetId = chatPartner.id
-        
+
         let currentUserRef = FirestoreConstants.MessagesCollection.document(currentUid).collection(chatPartnetId).document()
         let chatPartnerRef = FirestoreConstants.MessagesCollection.document(chatPartnetId).collection(currentUid)
-        
-        let recentCurrentUserRef = 
+
+        let recentCurrentUserRef =
         FirestoreConstants.MessagesCollection.document(currentUid).collection("recent-message").document(chatPartnetId)
-        let recentPartnerRef = 
+        let recentPartnerRef =
         FirestoreConstants.MessagesCollection.document(chatPartnetId).collection("recent-message").document(currentUid)
-        
+
         let messageId = currentUserRef.documentID
-        
+
         let message = Message(
             messageId: messageId,
             fromId: currentUid,
@@ -35,30 +35,30 @@ struct ChatService {
             messageText: messageText,
             timestamp: Timestamp()
         )
-        
+
         guard let messageData = try? Firestore.Encoder().encode(message) else { return }
-        
+
         currentUserRef.setData(messageData)
         chatPartnerRef.document(messageId).setData(messageData)
-        
+
         recentCurrentUserRef.setData(messageData)
         recentPartnerRef.setData(messageData)
     }
-    
-    func observeMessages( completion: @escaping([Message]) -> Void) {
+
+    func observeMessages( completion: @escaping ([Message]) -> Void) {
         guard let currentUid = Auth.auth().currentUser?.uid else { return }
-        
+
         let chatPartnerId = chatPartner.id
-        
+
         let query = FirestoreConstants.MessagesCollection
             .document(currentUid)
             .collection(chatPartnerId)
             .order(by: "timestamp", descending: false)
-        
+
         query.addSnapshotListener { snapshot, _ in
             guard let changes = snapshot?.documentChanges.filter({ $0.type == .added }) else { return }
             var messages = changes.compactMap({ try? $0.document.data(as: Message.self)})
-            
+
             for( index, message ) in messages.enumerated() where message.fromId != currentUid {
                 messages[index].user = chatPartner
             }

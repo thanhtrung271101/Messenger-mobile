@@ -14,22 +14,22 @@ extension Date {
         formatter.dateFormat = "HH:mm"
         return formatter
     }
-    
+
     private var dateFormatter: DateFormatter {
         let formatter = DateFormatter()
         formatter.timeStyle = .long
         formatter.dateFormat = "MM/dd/yy"
         return formatter
     }
-    
+
     private func timeString() -> String {
         return timeFormatter.string(from: self)
     }
-    
+
     private func dateString() -> String {
         return dateFormatter.string(from: self)
     }
-    
+
     func timestampString() -> String {
         if Calendar.current.isDateInToday(self) {
             return timeString()

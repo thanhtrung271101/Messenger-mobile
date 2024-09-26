@@ -10,7 +10,7 @@ import SwiftUI
 struct ChatView: View {
     @StateObject var viewModel: ChatViewModel
     let user: User
-    
+
     init(user: User) {
         self.user = user
         self._viewModel = StateObject(wrappedValue: ChatViewModel(user: user))
@@ -28,19 +28,18 @@ struct ChatView: View {
                         Text("Message")
                             .font(.footnote)
                             .foregroundStyle(Color(.gray))
-                        
+
                     }
                 }
-                
+
                 // message
-                
+
                 LazyVStack {
                     ForEach(viewModel.messages) { message in
                         ChatViewCell(message: message)
                     }
                 }
-                
-                
+
             }
             Spacer()
             // message input view

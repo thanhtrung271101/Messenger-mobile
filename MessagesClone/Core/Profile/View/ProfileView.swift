@@ -25,7 +25,7 @@ struct ProfileView: View {
                     .bold()
                 Divider()
             }
-            
+
             // List
             List {
                 Section {
@@ -41,10 +41,10 @@ struct ProfileView: View {
                     }
                 }
                 Section {
-                    Button ("Log Out") {
+                    Button("Log Out") {
                         AuthService.shared.signOut()
                     }
-                    Button ("Delete my account!") {
+                    Button("Delete my account!") {
                     }
                 }
                 .foregroundStyle(Color(.red))

@@ -22,7 +22,7 @@ struct InboxRowView: View {
                     .foregroundStyle(.gray)
                     .frame(maxWidth: UIScreen.main.bounds.width - 100, alignment: .leading)
             }
-            
+
             HStack {
                 Text(message.timestampString)
                 Image(systemName: "chevron.right")
@@ -34,6 +34,6 @@ struct InboxRowView: View {
     }
 }
 
-//#Preview {
+// #Preview {
 //    InboxRowView()
-//}
+// }

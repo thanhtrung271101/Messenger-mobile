@@ -22,7 +22,7 @@ struct RegistrationView: View {
                     .padding()
                     .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x: 10, y: 20)
                     .padding(.vertical)
-                
+
                 // input field
                 VStack {
                     TextField("Enter your email", text: $viewModel.email)
@@ -31,14 +31,14 @@ struct RegistrationView: View {
                         .background(Color(.systemGray6))
                         .cornerRadius(10)
                         .padding(.horizontal, 24)
-                    
+
                     TextField("Enter your full name", text: $viewModel.fullName)
                         .font(.subheadline)
                         .padding(12)
                         .background(Color(.systemGray6))
                         .cornerRadius(10)
                         .padding(.horizontal, 24)
-                    
+
                     SecureField("Enter your password", text: $viewModel.password)
                         .font(.subheadline)
                         .padding(12)
